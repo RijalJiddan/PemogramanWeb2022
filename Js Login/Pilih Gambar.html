@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuna | Pilih Gambar</title>
+</head>
+<body>
+    <style>
+        *{
+            background-color: rgb(226, 226, 226);
+            margin-top: auto;
+            align-items: center;
+            text-align: center;
+            border-style: solid;
+        }
+    </style>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">-Pilih Hewan-</option>
+        <option value="kucing">Kucing</option>
+        <option value="harimau">Harimau</option>
+        <option value="elang">elang</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="panda">Panda</option>
+        <option value="kangguru">Kangguru</option>
+        <option value="kukang">Kukang</option>
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil(){
+            switch (daftar.value) {
+                case "kucing":
+                hasil.innerHTML = '<img src="https://s.kaskus.id/images/2019/09/25/10698545_20190925032811.jpg" alt="">'
+                alert("ini adalah gambar Kucing")
+                break;
+
+                case "harimau":
+                hasil.innerHTML = '<img src="https://cdn0-production-images-kly.akamaized.net/w4893RYkykHsmiRf9-YWzwDkfH8=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1539424/original/038696900_1489716004-maung.jpg" alt="">'
+                alert("ini adalah gambar Harimau")
+                break;
+
+                case "elang":
+                hasil.innerHTML = '<img src="https://akcdn.detik.net.id/community/media/visual/2018/08/18/34d25e75-fa9c-4b31-aa2e-5089d2db4f07_169.jpeg?w=700&q=90" alt="">'
+                alert("ini adalah gambar elang")
+                break;
+
+                case "kelinci":
+                hasil.innerHTML = '<img src="https://static.wikia.nocookie.net/gochiusa/images/1/18/Tippy.png/revision/latest/scale-to-width-down/1000?cb=20160203062255" alt="">'
+                alert("ini adalah gambar Kelinci")
+                break;
+
+                case "panda":
+                hasil.innerHTML = '<img src="https://i.pinimg.com/originals/3f/9b/93/3f9b9340597d4c84d502f0dd0e112f33.png" alt="">'
+                alert("ini adalah gambar Panda")
+                break;
+
+                case "kangguru":
+                hasil.innerHTML = '<img src="https://i.imgflip.com/1hl7x0.jpg" alt="">'
+                alert("ini adalah gambar Kangguru")
+                break;
+
+                case "kukang":
+                hasil.innerHTML = '<img src="https://cdn1-production-images-kly.akamaized.net/y5snkztLFPbOvfyZfLDFCX3M2JY=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2914591/original/079679300_1568783533-gl.jpg" alt="">'
+                alert("ini adalah gambar Kukang")
+                break;
+
+                default:
+                    hasil.innerHTML =""
+            }
+        }
+    </script>
+</body>
+</html>

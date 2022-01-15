@@ -1,0 +1,50 @@
+* {
+    margin: 0; 
+}
+
+.container{
+    background-color: aliceblue;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding: 30px;
+    font-size: 1,5em;
+    text-shadow: rgb(0, 0, .2);
+    text-align: flex;
+    width: 100px;
+}
+
+.box1{
+    background-color: yellow;
+    position: absolute;
+    height: 500px;
+    left: 100px;
+    top: 50px;
+}
+
+.box2{
+    background-color: red;
+    position: absolute;
+    height: 500px;
+    left: 300px;
+    top: 50px;
+}
+
+.box3{
+    background-color: green;
+    position: absolute;
+    height: 500px;
+    left: 500px;
+    top: 50px;
+}
+
+.box4{
+    background-color: blue;
+    position: absolute;
+    height: 500px;
+    left: 700px;
+    top: 50px;
+}
